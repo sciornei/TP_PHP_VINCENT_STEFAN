@@ -7,12 +7,13 @@ require_once("data/data.php");
     /*AFFICHAGE DU CATALOGUE*/
     /*$id = clé/position des items dans le tableau $data des produits*/
     foreach ($data as $id => $item) {?>
-<li>
+<li><a href="detail.php?item_id=<?php $id ?>">
     <div>
         <p>
         <?php $item["nom"] ?>
         </p>
     </div>
+    </a>
 </li>
     <?php } ?>
 </ul>
