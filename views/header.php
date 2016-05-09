@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sciornei
- * Date: 2016-05-09
- * Time: 10:36
- */
+
+?>
+
+<ul>
+    <li><a href="index.php">Acceuil</a></li>
+    <li><a href="catalogues.php">Catalogue</a></li>
+</ul>

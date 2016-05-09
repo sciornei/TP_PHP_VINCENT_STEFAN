@@ -3,7 +3,7 @@
 
 
 <?php require_once ("views/page_top.php"); ?>
-
+<?php require_once ("views/header.php"); ?>
 <div id="main">
 /*CODE HTML*/
 <?php /*Affichage du catalogue*/ ?>
