@@ -1,24 +1,30 @@
 <?php
-
+/*LES CATÉGORIES*/
+$catégories = array(
+    0 => "action",
+    1 => "aventure",
+    2 => "combat",
+    3 => "sport",
+);
 /***********************JEUX PC***********************/
 $pc_games = array(
     0 => array(
         'nom' => 'Grand Theft Auto V',
-        'categorie' => 'action',
+        'categorie' => 0,
         'prix' => 65,
         'photo' => 'gtav_pc.jpg',
         'dans_carousel' => true,
     ),
     1 => array(
         'nom' => 'Fallout 4',
-        'categorie' => 'aventure',
+        'categorie' => 1,
         'prix' => 65,
         'photo' => 'fallout4_pc.jpg',
         'dans_carousel' => false,
     ),
     2 => array(
         'nom' => 'Overwatch',
-        'categorie' => 'combat',
+        'categorie' => 2,
         'prix' => 50,
         'photo' => 'overwatch_pc.png',
         'dans_carousel' => true,
@@ -30,21 +36,21 @@ $pc_games = array(
 $ps4_games = array(
     0 => array(
         'nom' => 'Dark Souls 3',
-        'categorie' => 'aventure',
+        'categorie' => 1,
         'prix' => 65,
         'photo' => 'darksouls3_ps4.jpg',
         'dans_carousel' => true,
     ),
     1 => array(
         'nom' => 'Battleborn',
-        'categorie' => 'combat',
+        'categorie' => 2,
         'prix' => 50,
         'photo' => 'battleborn_ps4.jpg',
         'dans_carousel' => false,
     ),
     2 => array(
         'nom' => 'Ratchet & Clank',
-        'categorie' => 'action',
+        'categorie' => 0,
         'prix' => 50,
         'photo' => 'ratchet_clank_ps4.jpg',
         'dans_carousel' => true,
@@ -55,21 +61,21 @@ $ps4_games = array(
 $xbox_games = array(
     0 => array(
         'nom' => 'Farcry Primal',
-        'categorie' => 'aventure',
+        'categorie' => 1,
         'prix' => 65,
         'photo' => 'farcryprimal_xbox.jpg',
         'dans_carousel' => true,
     ),
     1 => array(
         'nom' => 'Naruto Ultimate Ninja Storm 4',
-        'categorie' => 'combat',
+        'categorie' => 2,
         'prix' => 50,
         'photo' => 'naruto_xbox.jpg',
         'dans_carousel' => false,
     ),
     2 => array(
         'nom' => 'The Division',
-        'categorie' => 'action',
+        'categorie' => 0,
         'prix' => 60,
         'photo' => 'thedivision_xbox.jpg',
         'dans_carousel' => true,
@@ -80,21 +86,21 @@ $xbox_games = array(
 $wii_games = array(
     0 => array(
         'nom' => 'Mario Tennis',
-        'categorie' => 'sport',
+        'categorie' => 3,
         'prix' => 50,
         'photo' => 'mariotennis_wii.jpg',
         'dans_carousel' => true,
     ),
     1 => array(
         'nom' => 'Just Dance 2016',
-        'categorie' => 'danse',
+        'categorie' => 3,
         'prix' => 45,
         'photo' => 'justdance2016_wii.jpg',
         'dans_carousel' => false,
     ),
     2 => array(
         'nom' => 'Zelda HD',
-        'categorie' => 'aventure',
+        'categorie' => 0,
         'prix' => 50,
         'photo' => 'zelda_wii.jpg',
         'dans_carousel' => true,
