@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sciornei
- * Date: 2016-05-09
- * Time: 10:28
- */
+
+?>
+
+
+<?php require_once ("views/page_top.php"); ?>
+<?php require_once ("views/header.php"); ?>
+<div id="main">
+
+
+
+
+
+</div>
+<?php require_once ("views/footer.php"); ?>
+<?php require_once ("views/page_bottom.php.php"); ?>

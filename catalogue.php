@@ -2,6 +2,8 @@
 require_once("data/data.php");
 ?>
 <?php require_once ("views/page_top.php"); ?>
+<?php require_once ("views/header.php"); ?>
+
 <ul>
     <?php
     /*AFFICHAGE DU CATALOGUE*/
@@ -17,4 +19,5 @@ require_once("data/data.php");
 </li>
     <?php } ?>
 </ul>
+<?php require_once ("views/footer.php"); ?>
 <?php require_once ("views/page_bottom.php.php"); ?>
