@@ -1,5 +1,10 @@
 <?php
 require_once("data/data.php");
+//Est-ce que qu'il y a une categorie
+$cat_id = null;
+if (array_key_exists("cat_id",$_GET)&& array_key_exists($_GET["cat_id"],$categories)){
+    $cat_id = $_GET["item_id"];
+}
 ?>
 <?php require_once("views/page_top.php"); ?>
 <?php require_once("views/header.php"); ?>

@@ -30,8 +30,6 @@ $pc_games = array(
         'dans_carousel' => true,
     ),
 );
-
-
 /***********************JEUX PS4***********************/
 $ps4_games = array(
     0 => array(
@@ -56,7 +54,6 @@ $ps4_games = array(
         'dans_carousel' => true,
     ),
 );
-
 /***********************JEUX XBOX ONE***********************/
 $xbox_games = array(
     0 => array(
@@ -81,7 +78,6 @@ $xbox_games = array(
         'dans_carousel' => true,
     ),
 );
-
 /***********************JEUX WII U***********************/
 $wii_games = array(
     0 => array(

@@ -6,7 +6,9 @@
 <?php require_once ("views/header.php"); ?>
 <div id="main">
 
+<div id="liens_categories">
 
+</div>
 
 
 
