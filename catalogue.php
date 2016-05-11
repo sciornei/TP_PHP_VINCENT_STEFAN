@@ -27,4 +27,4 @@ if (array_key_exists("cat_id",$_GET)&& array_key_exists($_GET["cat_id"],$categor
     </ul>
 </div>
 <?php require_once("views/footer.php"); ?>
-<?php require_once("views/page_bottom.php.php"); ?>
+<?php require_once("views/page_bottom.php"); ?>

@@ -14,4 +14,4 @@
 
 </div>
 <?php require_once ("views/footer.php"); ?>
-<?php require_once ("views/page_bottom.php.php"); ?>
+<?php require_once ("views/page_bottom.php"); ?>
