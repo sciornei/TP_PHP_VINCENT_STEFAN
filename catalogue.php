@@ -14,12 +14,14 @@ if (array_key_exists("cat_id",$_GET)&& array_key_exists($_GET["cat_id"],$categor
         /*AFFICHAGE DU CATALOGUE*/
         if (! is_null($cat_id)){
             echo "<h2>Les jeux de la catégorie " . $categories[$cat_id] . "</h2>";
+        }else{
+            echo "<h2>Les jeux de la catégorie " . $categories["PC"] . "</h2>";
         }
         /*$id = clé/position des items dans le tableau $data des produits*/
-        foreach ($data as $id => $item) { ?>
-            <li><a href="detail.php?item_id=<?php $id ?>">
+        foreach ($pc_games as $id => $item) { ?>
+            <li><a href="detail.php?item_id=<?php echo $id ?>">
                     <div>
-                        <p><?php $item["nom"] ?></p>
+                        <p><?php echo ($item["nom"]) ?></p>
                     </div>
                 </a>
             </li>

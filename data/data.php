@@ -1,10 +1,10 @@
 <?php
 /*LES CATÉGORIES*/
-$catégories = array(
-    0 => "action",
-    1 => "aventure",
-    2 => "combat",
-    3 => "sport",
+$categories = array(
+    "PC" => "PC",
+    1 => "PS4",
+    2 => "Xbox",
+    3 => "Wii",
 );
 /***********************JEUX PC***********************/
 $pc_games = array(
