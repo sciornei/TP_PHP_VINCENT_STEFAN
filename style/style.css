@@ -1,32 +1,63 @@
+body{
+    background-color: slategrey ;
+}
 #main {
     position: relative;
+    background-color: slategrey;
+    height:1080px;
+    margin: auto ;
 }
 /***********************************CATALOGUE*************************************************/
 #catalogue{
     margin-bottom: 150px;
-    background-color: darkred;
 }
 
 #catalogue > ul > li{
     list-style-type: none;
     display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 10px;
 }
-.games{
-    margin-right: 8px;
-    background-color: red;
-}
+
 .games > img{
-    width: 300px;
-    height: 390px;
+    width: 350px;
+    height: 440px;
     position: relative;
-    margin-right: 8px;
-    display: inline-block
+    display: inline-block;
+    border: solid red;
+    border-radius: 25px;
 }
 
 
+/***********************************Menu gauche*************************************************/
+#menu_gauche{
+    float:left;
+    height: 800px;
+    width: 200px;
+    margin: -25px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background:blue;
+    border-radius: 25px;
+}
+#menu_gauche > ul > li{
+     list-style-type: none;
+    background-color: aqua;
+    border-radius: 25px;
+    margin-left: -15px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    text-align: center;
 
+}
 
+#menu_gauche > ul > li > a{
+    font-size: 25px ;
+    color: beige ;
+    font-family: "Microsoft PhagsPa";
+    text-decoration: none;
 
+}
 
 
 

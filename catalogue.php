@@ -16,6 +16,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
 </head>
 <body>
 <div id="main">
+    <div id="menu_gauche"><?php require_once("views/menu_gauche.php"); ?></div>
     <div id="catalogue">
         <ul>
             <?php
@@ -33,7 +34,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
                 <li><a href="detail.php?item_id=<?php echo $id ?>">
                         <div class="games">
                             <img src="images/<?= $item["photo"] ?>">
-                            
+
 
                         </div>
                     </a>
@@ -42,7 +43,6 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
         </ul>
     </div>
     <?php require_once("views/footer.php"); ?>
-    <?php require_once("views/page_bottom.php"); ?>
 </div>
 <script>
 </script>
