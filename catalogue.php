@@ -6,6 +6,7 @@ $cat_show = null;
 if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories)) {
     $cat_id = $_GET["cat"];
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,6 +30,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
                 echo "<h2>Les jeux de la catégorie " . $categories["pc"]["nom"] . "</h2>";
                 $cat_show = $categories["pc"]["id"];
             }
+            
             /*$id = clé/position des items dans le tableau $data des produits*/
             foreach ($cat_show as $id => $item) { ?>
                 <li><a href="detail.php?item_id=<?php echo $id ?>">
