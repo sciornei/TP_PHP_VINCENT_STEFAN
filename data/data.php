@@ -98,10 +98,10 @@ $wii_games = array(
 );
 /*LES CATÉGORIES*/
 $categories = array(
-    "pc" => [
+    "pc" => array(
         "nom" => "PC",
         "id" =>$pc_games
-    ],
+    ),
     "ps4" => array(
         "nom" => "Playstation4",
         "id" =>$ps4_games

@@ -2,7 +2,6 @@
 
 require_once("data/data.php");
 //Est-ce que qu'il y a une categorie
-exit("STOP!");
 $cat_id = null;
 $cat_show = null;
 if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories)) {
