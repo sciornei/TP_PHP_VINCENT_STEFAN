@@ -1,11 +1,4 @@
 <?php
-/*LES CATÉGORIES*/
-$categories = array(
-    "PC" => "PC",
-    1 => "PS4",
-    2 => "Xbox",
-    3 => "Wii",
-);
 /***********************JEUX PC***********************/
 $pc_games = array(
     0 => array(
@@ -100,5 +93,25 @@ $wii_games = array(
         'prix' => 50,
         'photo' => 'zelda_wii.jpg',
         'dans_carousel' => true,
+    ),
+
+);
+/*LES CATÉGORIES*/
+$categories = array(
+    "pc" => [
+        "nom" => "PC",
+        "id" =>$pc_games
+    ],
+    "ps4" => array(
+        "nom" => "Playstation4",
+        "id" =>$ps4_games
+    ),
+    "xbox" => array(
+        "nom" => "Xbox",
+        "id" =>$xbox_games
+    ),
+    "wii" => array(
+        "nom" => "Wii",
+        "id" =>$wii_games
     ),
 );
