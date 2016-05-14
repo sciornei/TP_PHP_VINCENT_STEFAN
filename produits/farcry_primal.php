@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/farcryprimal_xbox.jpg" alt="farcry primal image"
+        <img src="images/farcryprimal_xbox.jpg" alt="farcry primal image"/>
     </div>
     <?php
 

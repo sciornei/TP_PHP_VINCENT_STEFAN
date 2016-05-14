@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/ratchet_clank_ps4.jpg" alt="ratchet et clank image"
+        <img src="images/ratchet_clank_ps4.jpg" alt="ratchet et clank image"/>
     </div>
 
     <?php

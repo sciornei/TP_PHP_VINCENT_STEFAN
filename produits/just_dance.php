@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/justdance2016_wii.jpg" alt="just dance image"
+        <img src="images/justdance2016_wii.jpg" alt="just dance image"/>
     </div>
     <?php
 

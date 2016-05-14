@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/fallout4_pc.jpg" alt="fallout 4 image"
+        <img src="images/fallout4_pc.jpg" alt="fallout 4 image"/>
     </div>
     <?php
 

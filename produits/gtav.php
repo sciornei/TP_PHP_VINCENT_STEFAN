@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/gtav_pc.jpg" alt="gta 5 image"
+        <img src="images/gtav_pc.jpg" alt="gta 5 image"/>
     </div>
     <?php
 

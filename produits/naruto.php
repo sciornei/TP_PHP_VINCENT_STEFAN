@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/naruto_xbox.jpg" alt="naruto image"
+        <img src="images/naruto_xbox.jpg" alt="naruto image"/>
     </div>
 
     <?php

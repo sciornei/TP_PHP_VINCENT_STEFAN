@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/mariotennis_wii.jpg" alt="mario tennis image"
+        <img src="images/mariotennis_wii.jpg" alt="mario tennis image"/>
     </div>
     <?php
 

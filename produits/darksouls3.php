@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/darksouls3_ps4.jpg" alt="dark souls 3 image"
+        <img src="images/darksouls3_ps4.jpg" alt="dark souls 3 image"/>
     </div>
 
     <?php

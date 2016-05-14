@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/overwatch_pc.png" alt="overwatch image"
+        <img src="images/overwatch_pc.png" alt="overwatch image"/>
     </div>
 
 

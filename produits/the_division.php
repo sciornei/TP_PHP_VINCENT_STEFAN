@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/thedivision_xbox.jpg" alt="the division image"
+        <img src="images/thedivision_xbox.jpg" alt="the division image"/>
     </div>
 
     <?php

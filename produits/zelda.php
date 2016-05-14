@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/zelda_wii.jpg" alt="zelda image"
+        <img src="images/zelda_wii.jpg" alt="zelda image"/>
     </div>
 
     <?php

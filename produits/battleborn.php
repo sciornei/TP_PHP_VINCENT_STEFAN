@@ -7,7 +7,7 @@
 <div id="main">
 
     <div>
-        <img src="images/battleborn_ps4.jpg" alt="battleborn image"
+        <img src="images/battleborn_ps4.jpg" alt="battleborn image"/>
     </div>
 
     <?php
