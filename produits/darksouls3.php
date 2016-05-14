@@ -6,9 +6,24 @@
 <?php require_once("views/header.php"); ?>
 <div id="main">
 
-    <div><img src="darksouls3_ps4.jpg" alt="DarkSouls3"</div>
-    <p>DESCRIPTION ICI</p>
-    <p>PRIX ICI</p>
+    <div>
+        <img src="images/darksouls3_ps4.jpg" alt="dark souls 3 image"
+    </div>
+
+    <?php
+
+    echo "<p id='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+In vel sagittis est. Nunc vitae nibh quis metus bibendum maximus ut vel diam. 
+Curabitur libero ipsum, interdum quis gravida at, elementum et ligula. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Curabitur arcu quam, blandit sit amet pellentesque a, rhoncus ut justo. Sed nulla dolor, 
+consequat malesuada rhoncus vel, porttitor quis sem. Nullam hendrerit dignissim arcu, id 
+viverra elit vehicula et. Curabitur congue lectus augue, imperdiet commodo lorem consequat venenatis.</p>";
+
+    echo "<p id='prix'>Prix par unité : 65$</p>";
+    ?>
+
+    <button>Ajouter 1 copie de ce jeu au panier</button>
 
 
 </div>
