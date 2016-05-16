@@ -4,8 +4,50 @@ body{
 #main {
     position: relative;
     background-color: slategrey;
-    height:1080px;
+    height: 1500px;
     margin: auto ;
+}
+/***********************************SLIDER*****************************************************/
+#slider {
+    border: 8px solid black;
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+/***********************************LOGIN*****************************************************/
+#login {
+    float: right;
+    background-color: #6c8caa;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.login{
+    color: red;
+    height: 10px;
+}
+
+
+
+
+/***********************************ACCUEIL*****************************************************/
+.menu-principal {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    background-color: #6c8caa;
+    text-shadow: 0px -1px white;
+    font-size: 45px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.menu-principal:hover {
+    color: white;
+    background: #6a71aa;
+    cursor: pointer;
 }
 /***********************************CATALOGUE*************************************************/
 #catalogue{
@@ -36,7 +78,7 @@ body{
     width: 200px;
     margin: -25px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
     background:blue;
     border-radius: 25px;
 }
