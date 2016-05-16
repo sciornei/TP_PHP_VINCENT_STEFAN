@@ -86,3 +86,13 @@ body{
 #footer > a {
     display: inline-block
 }
+
+/**********************CREER ACCOUNT**************************/
+/* CLASSE ERROR/INVALIDE */
+.invalide {
+    background-color: indianred;
+}
+/* CLASSE VALID */
+.msg_validation {
+    font-weight: bolder;
+}
