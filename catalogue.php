@@ -16,6 +16,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
 </head>
 <body>
 <div id="main">
+    <?php require_once ("views/log_in.php"); ?>
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
     <div id="menu_gauche"><?php require_once("views/menu_gauche.php"); ?></div>
@@ -33,7 +34,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
             
             /*$id = clé/position des items dans le tableau $data des produits*/
             foreach ($cat_show as $id => $item) { ?>
-                <li><a href="detail.php?item_id=<?php echo $id ?>">
+                <li><a href="detail.php?item_id=<?php echo $item["id"] ?>">
                         <div class="games">
                             <img src="images/<?= $item["photo"] ?>">
                         </div>
