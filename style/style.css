@@ -96,3 +96,42 @@ body{
 .msg_validation {
     font-weight: bolder;
 }
+/*DIV avec formualire creer account*/
+#creer_compte_form{
+    width: 500px;
+    border: 2px solid black;
+}
+/*FORM*/
+input[type="text"] {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    margin: auto;
+}
+/*SEND button*/
+input[type="submit"] {
+    width: 100px;
+    padding: 5px;
+    color: #34495E;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    color: #FFF;
+    background: #34495E;
+    cursor: pointer;
+}
+
+/*RESET button*/
+input[type="reset"] {
+    width: 100px;
+    padding: 5px;
+    color: #34495E;
+    font-weight: bold;
+}
+
+input[type="reset"]:hover {
+    color: #FFF;
+    background: #34495E;
+    cursor: pointer;
+}

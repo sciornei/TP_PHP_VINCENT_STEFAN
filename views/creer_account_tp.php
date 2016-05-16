@@ -24,12 +24,12 @@ if ($receiving && array_key_exists('prenom', $_POST)) {
     }
 }
 //-----------------------------sexe-------------------------------------------------------
-$sexe = ""; // Contenu du champ sexe (sexe_h ou sexe_f)
-$sexe_valide = true; // Le champ est valide par défaut
-$sexe_msg_validation = ''; // Le message à renvoyer à l'utilisateur si le sexe n'est pas coché
+$sexe = "";
+$sexe_valide = true;
+$sexe_msg_validation = '';
 if ($receiving) {
     $sexe_valide = array_key_exists('sexe', $_POST)
-        && in_array($_POST['sexe'], array('sexe_h', 'sexe_f')); // Le champ est valide par défaut
+        && in_array($_POST['sexe'], array('sexe_h', 'sexe_f'));
     if ($sexe_valide) {
         $sexe = $_POST['sexe'];
     } else {
@@ -55,11 +55,11 @@ $age_valide = true;
 $age_msg_validation = '';
 if ($receiving) {
     $age_valide = array_key_exists('age', $_POST)
-        && is_array($_POST['age']);
+        && in_array($_POST['age'], array('age_min', 'age_maj'));
     if ($age_valide) {
         $age = $_POST['age'];
     } else {
-        $age_msg_validation = "Veuillez sélectionné votre tranche d'âge";
+        $age_msg_validation = "Vous n'avez pas indiquez votre tranche d'âge";
     }
 }
 ?>
@@ -68,7 +68,7 @@ if ($receiving) {
 <head lang="en">
     <meta charset="UTF-8">
     <title>Formualire</title>
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="../style/style.css"/>
 </head>
 <body>
 <form method="post">
@@ -116,14 +116,13 @@ if ($receiving) {
         } ?>
     </p>
     <!-----------------------------------AGE------------------------------------------------------->
-    <p <?= $receiving && ( ! $age) ? 'class="invalide"' : '' ?>>
-        <label for="mineur">Moins de 18ans :</label>
-        <input type="checkbox" id="mineur" name="mineur[]" value="mineur"
-            <?= $receiving && is_array($age) && in_array('mineur',$mineur) ? 'checked="checked"' : '' ?>
+    <p <?= $receiving && ( ! $age_valide) ? 'class="invalide"' : '' ?>><label for="age_min">Moins de 18 ans :</label>
+        <input type="radio" id="age_min" name="age" value="age_min"
+            <?= $receiving && ('age_min' == $sexe) ? 'checked="checked"' : '' ?>
         />
-        <label for="majeur">18ans ou plus :</label>
-        <input type="checkbox" id="majeur" name="majeur[]" value="majeur"
-            <?= $receiving && is_array($age) && in_array('majeur',$majeur) ? 'checked="checked"' : '' ?>
+        <label for="age_maj">Plus de 18 ans :</label>
+        <input type="radio" id="age_maj" name="age" value="age_maj"
+            <?= $receiving && ('age_maj' == $age) ? 'checked="checked"' : '' ?>
         />
         <?php if ($receiving && (!$age_valide)) {
             echo "<span class='msg_validation'>$age_msg_validation<span>";
