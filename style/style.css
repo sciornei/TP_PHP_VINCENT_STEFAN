@@ -82,11 +82,9 @@ body{
     display: inline-block
 
 }
-
 #footer > a {
     display: inline-block
 }
-
 /**********************CREER ACCOUNT**************************/
 /* CLASSE ERROR/INVALIDE */
 .invalide {
@@ -97,7 +95,7 @@ body{
     font-weight: bolder;
 }
 /*DIV avec formualire creer account*/
-#creer_compte_form{
+.creer_compte_form{
     width: 500px;
     border: 2px solid black;
 }

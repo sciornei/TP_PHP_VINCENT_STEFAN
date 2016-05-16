@@ -13,11 +13,11 @@
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
 
-    <div id="creer_compte_form">
+    <div class="creer_compte_form">
     <?php require_once ("views/creer_account_tp.php"); ?>
     </div>
-    <div id="log_in_form">
-        <?php ; ?>
+    <div class="creer_compte_form">
+        <?php require_once ("views/log_in_form.php"); ?>
     </div>
 
     <?php require_once ("views/footer.php"); ?>

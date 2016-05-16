@@ -36,6 +36,17 @@ if ($receiving) {
         $sexe_msg_validation = "Vous n'avez pas indiquez votre sexe";
     }
 }
+//-----------------------------PASSWORD-------------------------------------------------------
+$password = "";
+$password_valide = true;
+$password_msg_validation = '';
+if ($receiving && array_key_exists('password', $_POST)) {
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+    $prenom_valide = (1 === preg_match('/\w{2,}/', $password));
+    if (!$password_valide) {
+        $password_msg_validation = "Votre password n'est pas valide,ce dernier doit comporter au moins deux lettres";
+    }
+}
 //-----------------------------continent-------------------------------------------------------
 $continent = "";
 $continent_valide = true;
@@ -86,6 +97,14 @@ if ($receiving) {
         <input id="prenom" type="text" name="prenom" value="<?= $prenom ?>"/>
         <?php if ($receiving && ( ! $prenom_valide)) {
             echo "<span class='msg_validation'>$prenom_msg_validation<span>";
+        } ?>
+    </p>
+    <!-----------------------------------PASSWORD------------------------------------------------------>
+    <p <?= $receiving && ( ! $password_valide) ? 'class="invalide"' : '' ?>>
+            <label for="password">Password :</label>
+        <input id="password" type="password" name="password" value="<?= $password ?>"/>
+        <?php if ($receiving && ( ! $password_valide)) {
+            echo "<span class='msg_validation'>$password_msg_validation<span>";
         } ?>
     </p>
     <!-----------------------------------SEXE------------------------------------------------------->
