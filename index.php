@@ -1,5 +1,15 @@
-<?php
+<?php require "views/connections.php" ?>
 
+<!--Creer account-->
+<?php if (isset($_POST["soumettre"])){
+    session_start();
+    $username = $_POST["nom"];
+    $password = $_POST["password"];
+    $age = $_POST["age"];
+
+    $sql = $con->query("INSERT INTO users (username, password, age)VALUES('{$username}','{$password}','{$age}')");
+    header("Location: catalogue.php");
+}
 ?>
 
 <!DOCTYPE html>

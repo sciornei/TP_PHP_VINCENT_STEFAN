@@ -21,7 +21,7 @@ if ($receiving && array_key_exists('password', $_POST)) {
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
     $prenom_valide = (1 === preg_match('/\w{2,}/', $password));
     if (!$password_valide) {
-        $password_msg_validation = "Votre password n'est pas valide,ce dernier doit comporter au moins deux lettres";
+        $password_msg_validation = "Votre mot de passe n'est pas valide,ce dernier doit comporter au moins deux lettres";
     }
 }
 //-----------------------------AGE-------------------------------------------------------
@@ -30,7 +30,7 @@ $age_valide = true;
 $age_msg_validation = '';
 if ($receiving && array_key_exists('age', $_POST)) {
     $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_STRING);
-    $age_valide = (1 === preg_match('/\w{1,3}/', $prenom));
+    $age_valide = (1 === preg_match('/\w{1,3}/', $age));
     if (!$age_valide) {
         $age_msg_validation = "Veuillez indiquez votre age";
     }
