@@ -16,7 +16,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
 </head>
 <body>
 <div id="main">
-    <?php require_once ("views/log_in.php"); ?>
+    <?php require_once("views/login.php"); ?>
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
     <div id="menu_gauche"><?php require_once("views/menu_gauche.php"); ?></div>

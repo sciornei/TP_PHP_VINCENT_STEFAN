@@ -20,7 +20,7 @@ if (array_key_exists("item_id", $_GET)
 </head>
 <body>
 <div id="main">
-    <?php require_once ("views/log_in.php"); ?>
+    <?php require_once("views/login.php"); ?>
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
     <?php require_once ("views/footer.php"); ?>

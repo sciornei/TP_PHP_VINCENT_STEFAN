@@ -3,8 +3,8 @@
 ?>
 <div id="login">
 <form method="post">
-    <input class="login" name="user" placeholder="Nom d'utilisateur" type="text">
+    <input class="login" name="nom" placeholder="Nom" type="text">
     <input class="login" name="mdp" placeholder="Mot de passe" type="password">
-    <div><button type="submit">Connection</button></div>
+    <div><button type="submit">Connexion</button></div>
 </form>
 </div>

@@ -100,11 +100,6 @@ body{
     text-decoration: none;
 
 }
-
-
-
-
-
 /***********************************FOOTER*************************************************/
 #footer {
     display: inline-block;
@@ -141,12 +136,11 @@ body{
     width: 500px;
     border: 2px solid black;
 }
+
 /*FORM*/
 input[type="text"] {
     display: inline-block;
     text-align: center;
-    width: 200px;
-    height: 25px;
     margin: auto;
 }
 /*SEND button*/
