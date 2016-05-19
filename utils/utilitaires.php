@@ -1,7 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sciornei
- * Date: 2016-05-09
- * Time: 10:34
- */
+function is_session_started()
+{
+//  echo phpversion();
+    if ( php_sapi_name() !== 'cli' ) {
+        if ( version_compare(phpversion(), '5.4.0', '>=') ) {
+            return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
+        } else {
+            return session_id() === '' ? FALSE : TRUE;
+        }
+    }
+    return FALSE;
+}
+
+if ( ! is_session_started()) {
+    session_start();
+}
+?>

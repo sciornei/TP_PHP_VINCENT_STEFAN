@@ -1,5 +1,5 @@
 <?php require "views/connections.php" ?>
-
+<?php require_once "utils/utilitaires.php" ?>
 <!--Creer account-->
 <?php if (isset($_POST["soumettre"])){
     session_start();
@@ -22,6 +22,7 @@
 <body>
 <div id="main">
     <?php require_once("views/login.php"); ?>
+    <?php require_once("views/panier.php"); ?>
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
     <div id="menu_gauche"><?php require_once("views/menu_gauche.php"); ?></div>

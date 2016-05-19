@@ -15,19 +15,20 @@ body{
     text-align: center;
 }
 
-/***********************************LOGIN*****************************************************/
-#login {
+/***********************************PANIER*****************************************************/
+#panier {
     float: right;
     background-color: #6c8caa;
     padding: 20px;
     border-radius: 25px;
+    width: 250px;
+    height: 50px;
 }
-
-.login{
-    color: red;
+#panier > p{
+    font-weight: bold;
+    text-align: center;
 
 }
-
 
 
 
@@ -83,7 +84,7 @@ body{
     border-radius: 25px;
 }
 #menu_gauche > ul > li{
-     list-style-type: none;
+    list-style-type: none;
     background-color: aqua;
     border-radius: 25px;
     margin-left: -15px;
@@ -168,4 +169,35 @@ input[type="reset"]:hover {
     color: #FFF;
     background: #34495E;
     cursor: pointer;
+}
+/**********************Details**************************/
+
+
+.detail > div > img{
+    width: 550px;
+    height: 640px;
+    position: absolute;
+    display: inline-block;
+    border: solid #5e74ff;
+    border-radius: 25px;
+}
+.detail > div  {
+    font-size: 25px;
+    display: inline-block;
+    position: absolute;
+}
+.detail > div > p {
+    padding-left: 600px;
+}
+.detail > div > a{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    background-color: #6c8caa;
+    font-size: 20px;
+    padding: 10px;
+    color: #c3ffff;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-left: 600px;
 }
