@@ -1,3 +1,4 @@
+
 <div id="panier">
 
     <p>Panier</p>
@@ -11,6 +12,7 @@
             $_SESSION[$jeu["id"]]++;
         }
     }
+
     var_dump($_SESSION);
     ?>
 
