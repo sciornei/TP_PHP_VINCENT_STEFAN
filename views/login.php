@@ -1,4 +1,6 @@
-
+<?php
+require "connections.php";
+?>
 <div id="login">
     <form method="post">
         <input class="login" id="username" name="nom" placeholder="Nom d'utilisateur" type="text">
