@@ -16,7 +16,7 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
-    <title>Formulaire : Input</title>
+    <title>Acceuil</title>
     <link rel="stylesheet" href="style/style.css"/>
 </head>
 <body>
