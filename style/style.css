@@ -173,6 +173,7 @@ input[type="reset"]:hover {
 /**********************Details**************************/
 
 
+
 .detail > div > img{
     width: 550px;
     height: 640px;
@@ -200,4 +201,14 @@ input[type="reset"]:hover {
     font-weight: bold;
     border-radius: 25px;
     margin-left: 600px;
+}
+
+/**********************Panier**************************/
+.achat{
+    font-size: 20px;
+
+}
+#prix{
+    font-size: 25px;
+    color: #ff6b59;
 }

@@ -1,5 +1,6 @@
 <?php
 require_once("data/data.php");
+require_once ("utils/utilitaires.php");
 //Est-ce que qu'il y a une categorie
 $cat_id = null;
 $cat_show = null;
@@ -17,6 +18,7 @@ if (array_key_exists("cat", $_GET) && array_key_exists($_GET["cat"], $categories
 <body>
 <div id="main">
     <?php require_once("views/login.php"); ?>
+    <?php require_once("views/panier.php"); ?>
     <?php require_once ("views/page_top.php"); ?>
     <?php require_once ("views/header.php"); ?>
     <div id="menu_gauche"><?php require_once("views/menu_gauche.php"); ?></div>
